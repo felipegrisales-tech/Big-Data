@@ -1,0 +1,38 @@
+REPORTE DEL DATAFRAME
+============================================================
+Filas: 50000
+Columnas: 9
+Duplicados: 0
+
+Columnas y tipos:
+- trend_label: object
+- platform: object
+- region: object
+- category: object
+- creator_tier: object
+- like_rate: float64
+- comment_rate: float64
+- share_rate: float64
+- views_per_day: float64
+
+Valores nulos por columna:
+- trend_label: 0
+- platform: 0
+- region: 0
+- category: 0
+- creator_tier: 0
+- like_rate: 0
+- comment_rate: 0
+- share_rate: 0
+- views_per_day: 0
+
+Estadísticas numéricas:
+       like_rate  comment_rate  share_rate  views_per_day
+count  50000.000     50000.000   50000.000      50000.000
+mean       0.220         0.088       0.066          0.115
+std        0.115         0.062       0.048          0.027
+min        0.000         0.000       0.000          0.027
+25%        0.133         0.042       0.031          0.096
+50%        0.203         0.075       0.055          0.113
+75%        0.290         0.121       0.090          0.132
+max        0.863         0.350       0.250          0.243

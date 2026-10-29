@@ -1,0 +1,33 @@
+RESUMEN DE LA ACTIVIDAD AE2: MANEJO DE ARCHIVOS CSV, JSON Y TXT
+================================================================
+Fecha de generación: 2026-10-29 03:28:15
+
+1. URL de origen
+- CSV:  https://huggingface.co/datasets/ytRankAI/Top_100_YouTube_Channels/blob/main/top_100_youtube_channels.csv
+- JSON: https://huggingface.co/datasets/pyrihtm/movies_100/blob/main/movies_100.json
+
+2. Archivo CSV
+- Archivo importado: datos/top_100_youtube_channels.csv
+- Archivo nuevo guardado: datos/top_100_youtube_channels_datos_modificado.csv
+- Modificaciones realizadas:
+    * Actualizado el registro 0, columna 'channel_url': 'https://www.ytrank.com/channel/mrbeast-UCX6OQ3DkcsbYNE6H8uQQuVA' -> 'VALOR_ACTUALIZADO'
+    * Eliminado el registro 1
+    * Agregado un registro nuevo en la posición 99
+
+3. Archivo JSON
+- Archivo importado: datos/movies_100.json
+- Archivo nuevo guardado: datos/movies_100_datos_modificado.json
+- Modificaciones realizadas:
+    * Actualizado el registro 0, campo 'output': {'@context': 'https://schema.org', '@type': 'TVEpisode', 'url': 'https://www.imdb.com/title/tt7418378/', 'name': 'Julies Jewels', 'genre': ['Adult'], 'datePublished': '2014-09-24', 'keywords': 'brunette,black woman,big breasts,flashing,outdoor nudity', 'actor': [{'@type': 'Person', 'url': 'https://www.imdb.com/name/nm6926310/', 'name': 'Julie Kay'}, {'@type': 'Person', 'url': 'https://www.imdb.com/name/nm5355069/', 'name': 'Mirko Steel'}]} -> 'VALOR_ACTUALIZADO'
+    * Eliminado el registro 1
+    * Agregado un registro nuevo en la posición 99
+
+4. Clases y métodos utilizados
+- ManejadorCSV: importar_csv, mostrar, actualizar_valor, eliminar_registro, agregar_registro, guardar_csv
+- ManejadorJSON: importar_json, obtener_registros, campos, mostrar, actualizar_valor, eliminar_registro, agregar_registro, guardar_json
+- GeneradorResumenTxt: generar_resumen, leer_resumen
+
+5. Registros procesados
+- CSV:  100 importados, 100 guardados
+- JSON: 100 importados, 100 guardados
+- Total importados: 200
